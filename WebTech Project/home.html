@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Introduction</title>
+    <style>
+        .x {
+            position: absolute;
+            top: 90px; /* Adjust the distance from the top */
+            left:65%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        a {
+            display: block;
+            width: 132px;
+            height: 32px;
+            line-height: 35px;
+            font-size: 16px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #838383;
+            border: 2px solid #7c7c7c;
+            border-radius: 40px;
+            overflow: hidden;
+            letter-spacing: 2px;        
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+        }
+
+        a span {
+            position: relative;
+            z-index: 0;
+        }
+
+        a:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #dbc222;
+            transition: all .35s;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        a:hover:after {
+            width: 100%;
+        }
+        .button {
+            margin-left: 30px; /* Adjust margin as needed */
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(bg1.jpg);
+            background-color: #000;
+            color: #666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url("Background.jpg");
+            background-size: 1000px;
+            background-position:center;
+
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1700px;
+            padding: 0px;
+            background-color: #101010;
+            color: #666;
+            border-radius: 10px;
+            margin-right: 150px;
+            margin-bottom: 100px;
+
+        }
+        
+        img {
+            width: 400px;
+            height: auto;
+            border-width: 10px;
+            border-radius: 40px;
+            overflow: hidden;
+            margin-right: 50px;
+
+        }
+
+        h1, p {
+            margin-left: 100px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #995427;
+            /* White color for the heading */
+            margin-bottom: 0px;
+        }
+        p {
+        font-size: 1.2em;
+        color: white;
+
+        }
+
+        h1.secondary {
+            color: white;
+            margin-top: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="x">
+        <a href="#"><span>HOME</span></a>
+        <a href="aboutme.html" class="button"><span>ABOUT</span></a>
+        <a href="port.html" class="button"><span>PORTFOLIO</span></a>
+        <a href="contact.html" class="button"><span>CONTACT</span></a>
+
+    </div>
+    <img src="Profile.jpeg" alt="Your Photo">
+    <div class="container">
+        <div>
+            <h1>    I'm Prashant Saraswat.</h1>
+            <h1 class="secondary">Web Developer</h1>
+            <p>
+                I'm a student of UPES currently pursuing B.tech computer science<br> with specialization in CC&Vt.
+            </p>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
